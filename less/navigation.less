@@ -1,1 +1,24 @@
 // Navigation Styles here
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 2%;
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: @font-color;
+            font-size: 15px;
+            padding-bottom: 2%;
+        }
+    }
+    hr{
+        margin: -10px;
+        border-bottom:1px dashed @navigation-border;
+        width: 100%;
+    }
+}
