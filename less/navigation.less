@@ -2,23 +2,40 @@
 .nav-container{
     display: flex;
     justify-content: space-between;
-
-    padding-top: 2%;
+    border-bottom: 1px dashed @navigation-border;
+    padding-top: 1%;
     nav{
-        width: 50%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        a{
-            text-decoration: none;
-            color: @font-color;
-            font-size: 15px;
-            padding-bottom: 2%;
-        }
-    }
-    hr{
-        margin: -10px;
-        border-bottom:1px dashed @navigation-border;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 800px;
+        @media @mobile {
+            padding-top: 2%;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 2px;
+            }
+        }
+        .navlinks{
+            display: flex;
+            width:90%;
+            justify-content: space-around;
+            a{
+                text-decoration: none;
+                color: @font-color;
+                font-size: 15px;
+                padding-bottom: 2%;
+                @media @mobile{
+                    font-size: 14px;
+                }
+            }
+        }
+        
     }
 }
