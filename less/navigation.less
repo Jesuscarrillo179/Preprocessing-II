@@ -24,8 +24,12 @@
         }
         .navlinks{
             display: flex;
-            width:90%;
+            width: 40%;
             justify-content: space-around;
+            @media @mobile{
+                width: 90%;
+                align-items: center;
+            }
             a{
                 text-decoration: none;
                 color: @font-color;

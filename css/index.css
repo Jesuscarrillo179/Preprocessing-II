@@ -202,8 +202,14 @@ img {
 }
 .nav-container nav .navlinks {
   display: flex;
-  width: 90%;
+  width: 40%;
   justify-content: space-around;
+}
+@media (max-width: 550px) {
+  .nav-container nav .navlinks {
+    width: 90%;
+    align-items: center;
+  }
 }
 .nav-container nav .navlinks a {
   text-decoration: none;
@@ -279,6 +285,7 @@ img {
 .home .mobileswitch {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 @media (max-width: 550px) {
   .home .mobileswitch {
